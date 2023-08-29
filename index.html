@@ -2,9 +2,14 @@
 <html>
   <head>
     <style>
-      .container {
+        /* header section start */
+
+      .header-container {
         display: flex;
         justify-content: space-around;
+         background: rgba(229, 84, 115, 0.10);
+         align-items: center;
+         height: 650px;
       }
 
       .left-side {
@@ -47,6 +52,7 @@
         margin-top: 120px;
         width: 90%;
         margin: 0 auto;
+       
       }
       .flower-title {
         display: flex;
@@ -54,6 +60,7 @@
         color: #272727;
         font-size: 40px;
         font-weight: 800;
+        margin-top: 120px;
       }
       .flower-para {
         color: rgba(39, 39, 39, 0.6);
@@ -93,6 +100,7 @@
         background: rgba(229, 84, 115, 0.05);
         height: 520px;
         margin-bottom: 120px;;
+        margin-top: 120px;
       }
       .offer-container {
         padding-top: 100px;
@@ -140,6 +148,27 @@
         padding: 20px 43px;
       }
       /* instagram section styling start */
+      #instagram {
+       
+     /*    width: 90%;
+        margin: 0 auto; */
+      }
+      .instagram-title {
+        display: flex;
+        justify-content: center;
+        color: #272727;
+        font-size: 40px;
+        font-weight: 800;
+      }
+      .instagram-para {
+        color: rgba(39, 39, 39, 0.6);
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        padding-bottom: 30px;
+        margin-top: -30px;
+      }
+
       #instagram .container {
         display: flex;
         width: 90%;
@@ -155,6 +184,65 @@
       img {
         max-width: 100%;
         height: auto;
+      }
+     /* subscription section styling start */
+     .subscription-div {
+        background-image: url("./images/Rectangle 9.png");
+        background-size: cover;
+        height: 449px;
+        margin-top: 120px;
+        margin-bottom: 120px;
+      }
+
+      .subscription-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .subscription-title {
+        color: #272727;
+        text-align: center;
+        font-family: Lato;
+        font-size: 40px;
+        font-weight: 800;
+        padding-top: 120px;
+      }
+
+      .subscription-text {
+        color: rgba(39, 39, 39, 0.6);
+        text-align: center;
+        font-family: Lato;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+       margin-top: -20px;
+        
+      }
+
+      .input-container {
+        display: flex;
+      }
+
+      .subscription-input {
+        width: 700px;
+        height: 64px;
+        border-radius: 8px;
+      }
+
+      .subscribe-btn {
+        color: white;
+        font-size: 16px;
+        background: #e55473;
+        padding: 5px;
+        border-radius: 8px;
+        outline: none;
+        border: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 154px;
+        height: 64px;
       }
 
       /* footer section styling start */
@@ -187,7 +275,8 @@
     </style>
   </head>
   <body>
-    <div class="container">
+    <section>
+    <div class="header-container">
       <div class="left-side">
         <h1 class="title">
           Let's make <br />beautiful flowers a<br />
@@ -207,6 +296,7 @@
         <img src="./images/pngwing 10.png" alt="Flower" />
       </div>
     </div>
+</section>
     <!-- flowers section start -->
 
     <section id="flower">
@@ -289,6 +379,17 @@
     <!-- instagram section start -->
 
     <section id="instagram">
+        <div>
+            <div class="instagram-title">
+              <p>Instagram</p>
+            </div>
+            <div class="instagram-title">
+              <p class="instagram-para">
+                It is a long established fact that a reader will be distracted by the
+                readable <br />content of a page when looking at its layout.
+              </p>
+            </div>
+          </div>
       <div class="main-container" style="text-align: center">
         <div class="container">
           <div class="column">
@@ -308,6 +409,20 @@
           </div>
         </div>
       </div>
+    </section>
+    <!-- subscription-section start -->
+    <section>
+        <div class="subscription-div">
+            <div class="subscription-section">
+              <h1 class="subscription-title">Get The Latest Deals</h1>
+              <p class="subscription-text">$30 coupon for first shopping</p>
+              <div class="input-container">
+                <input class="subscription-input" type="text" />
+                <button class="subscribe-btn">Subscribe</button>
+              </div>
+            </div>
+          </div>
+
     </section>
 
     <!-- footer section start -->
