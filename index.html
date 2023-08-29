@@ -1,74 +1,211 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-.container {
- 
-  
-  display: flex;
-  justify-content: space-around;
-}
+  <head>
+    <style>
+      .container {
+        display: flex;
+        justify-content: space-around;
+      }
 
-.left-side {
- 
- 
-}
+      .left-side {
+      }
 
+      .title {
+        font-size: 60px;
+        margin-top: 20px;
+      }
 
+      .paragraph {
+        margin-top: 16px;
+        font-weight: 300;
+      }
 
-.title {
-  font-size: 60px;
-  margin-top: 20px;
-}
+      .btn {
+        color: white;
+        font-size: 16px;
+        background: #e55473;
+        padding: 5;
+        border-radius: 8px;
+        outline: none;
+        border: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding: 20px 43px;
+      }
 
-.paragraph {
-  margin-top: 16px;
-  font-weight: 300;
-  
-}
+      .right-side {
+        display: flex;
+        align-items: center;
+      }
 
-.btn{
-    color:white;
-    font-size: 16px;
-    background: #e55473;
-    padding: 5;
-    border-radius: 8px;
-    outline:none;
-    border: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding: 20px 43px;
-}
+      img {
+        width: 300px;
+      }
 
-.right-side {
-  display: flex;
-  align-items: center;
-}
+      /* flower section styly start */
+      #flower {
+        margin-top: 120px;
+      }
+      .flower-title {
+        display: flex;
+        justify-content: center;
+        color: #272727;
+        font-size: 40px;
+        font-weight: 800;
+      }
+      .flower-para {
+        color: rgba(39, 39, 39, 0.6);
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        padding-bottom: 30px;
+        margin-top: -30px;
+      }
+      #flower .container {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+      }
 
-img {
-  width: 300px;
-}
-</style>
-</head>
-<body>
+      #flower .container .column {
+        border-radius: 300px 300px 0 0;
+        width: 453px;
+        height: 558px;
+      }
+      #one {
+        background: rgba(167, 33, 98, 0.15);
+      }
+      #two {
+        background: rgba(5, 151, 160, 0.15);
+        width: 453px;
+        height: 558px;
+      }
+      #three {
+        background: rgba(71, 125, 17, 0.15);
+        width: 453px;
+        height: 558px;
+      }
 
-<div class="container">
-  <div class="left-side">
-    <div class="tile"></div>
-    <h1 class="title">Let's make <br>beautiful flowers a<br> part of your life.</h1>
-    <p class="paragraph">It is a long established fact that a reader will be distracted by the readable <br> content of a page when looking at its layout. The point of using Lorem Ipsum is <br> that it has a more-or-less normal distribution of letters.</p>
-    <button class="btn">Shop Now</button>
-  </div>
-  
-  <div class="right-side">
-    <img src="./images/pngwing 10.png" alt="Flower">
-  </div>
-</div>
-<!-- flowers section start -->
+      /* footer section styling start */
+      .footer {
+        width: 100%;
+        text-align: center;
+        background: #000;
+        height: 449px;
+      }
 
-<section>
+      .footer-title {
+        font-size: 48px;
+        color: #e55473;
+        font-weight: 800;
+      }
 
-</section>
+      .footer-paragraph {
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.9);
+        font-weight: 400;
+      }
+      .footer-end {
+        color: rgba(255, 255, 255, 0.4);
+        text-align: center;
+        font-family: Lato;
+        font-size: 14px;
 
-</body>
+        font-weight: 400;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-side">
+        <div class="tile"></div>
+        <h1 class="title">
+          Let's make <br />beautiful flowers a<br />
+          part of your life.
+        </h1>
+        <p class="paragraph">
+          It is a long established fact that a reader will be distracted by the
+          readable <br />
+          content of a page when looking at its layout. The point of using Lorem
+          Ipsum is <br />
+          that it has a more-or-less normal distribution of letters.
+        </p>
+        <button class="btn">Shop Now</button>
+      </div>
+
+      <div class="right-side">
+        <img src="./images/pngwing 10.png" alt="Flower" />
+      </div>
+    </div>
+    <!-- flowers section start -->
+
+    <section id="flower">
+      <div class="flower-title">
+        <p>Our Featured Flowers</p>
+      </div>
+      <div class="flower-title">
+        <p class="flower-para">
+          It is a long established fact that a reader will be distracted by the
+          readable <br />content of a page when looking at its layout.
+        </p>
+      </div>
+      <div class="container">
+        <div
+          class="column one"
+          id="one"
+          style="display: flex; justify-content: center"
+        >
+          <img src="./images/pngwing 6.png" alt="Flower" />
+          <div style="display: block"></div>
+        </div>
+
+        <div
+          class="column two"
+          id="two"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          <img src="./images/pngwing 5.png" alt="Flower" />
+        </div>
+
+        <div
+          class="column three"
+          id="three"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          <img
+            src="./images/pngwing 7.png"
+            alt="Flower"
+            style="padding-top: 80px"
+          />
+        </div>
+      </div>
+      <div style="display: flex; justify-content: space-around">
+        <div>
+          <a href="">Pink Flower Tree</a>
+        </div>
+        <div>
+          <a href="">Pink Flower Tree</a>
+        </div>
+        <div>
+          <a href="">Pink Flower Tree</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section start -->
+    <section>
+      <div class="footer">
+        <h1 class="footer-title" style="padding-top: 120px">
+          Flower<span style="color: white">Shop</span>
+        </h1>
+        <p class="footer-paragraph">
+          It is a long established fact that a reader will be distracted by the
+          readable <br />content of a page when looking at its layout.
+        </p>
+        <p class="footer-end">
+          @2020-2023, FlowerShop.com. All rights reserved.
+        </p>
+      </div>
+    </section>
+  </body>
 </html>
