@@ -213,7 +213,7 @@
       .subscription-text {
         color: rgba(39, 39, 39, 0.6);
         text-align: center;
-        font-family: Lato;
+        
         font-size: 18px;
         font-weight: 400;
         line-height: 30px;
@@ -224,12 +224,20 @@
       .input-container {
         display: flex;
       }
-
+      
       .subscription-input {
         width: 700px;
         height: 64px;
         border-radius: 8px;
       }
+      .subscription-input::placeholder {
+        color: rgba(39, 39, 39, 0.60);
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+      
+}
+
 
       .subscribe-btn {
         color: white;
@@ -267,9 +275,7 @@
       .footer-end {
         color: rgba(255, 255, 255, 0.4);
         text-align: center;
-        font-family: Lato;
         font-size: 14px;
-
         font-weight: 400;
       }
     </style>
@@ -417,7 +423,7 @@
               <h1 class="subscription-title">Get The Latest Deals</h1>
               <p class="subscription-text">$30 coupon for first shopping</p>
               <div class="input-container">
-                <input class="subscription-input" type="text" />
+                <input class="subscription-input" type="text" placeholder="Enter your email..."/>
                 <button class="subscribe-btn">Subscribe</button>
               </div>
             </div>
