@@ -4,10 +4,14 @@
 <style>
 .container {
   display: flex;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .column {
   width: 25%;
+  display: flex;
+  justify-content: center;
 }
 
 img {

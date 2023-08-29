@@ -86,50 +86,48 @@
         height: 558px;
       }
       /* offer section styling start */
-      .main-container {
-        text-align: center;
-        background: rgba(229, 84, 115, 0.05);
-      }
-      .container {
+      .offer-container {
+  display: flex;
+  width: 100%;
+}
+
+.offer-image {
+  width: 50%;
+}
+
+.offer-content {
+  width: 50%;
+}
+
+.offer-title {
+  font-size: 36px;
+}
+
+.offer-color {
+  color: red;
+}
+
+.offer-paragraph {
+  font-size: 16px;
+}
+      /* instagram section styling start */
+      #instagram .container {
         display: flex;
+        width: 90%;
+        margin: 0 auto;
       }
 
       .column {
-        width: 50%;
+        width: 25%;
+        display: flex;
+        justify-content: center;
       }
 
-      .offer-color {
-        color: red;
+      img {
+        max-width: 100%;
+        height: auto;
       }
 
-      .offer-title {
-        color: #272727;
-
-        font-size: 40px;
-
-        font-weight: 800;
-      }
-      .offer-para {
-        color: rgba(39, 39, 39, 0.6);
-        text-align: center;
-
-        font-size: 16px;
-
-        font-weight: 400;
-        line-height: 20px;
-      }
-      .btn {
-        color: white;
-        font-size: 16px;
-        background: #e55473;
-        padding: 5;
-        border-radius: 8px;
-        outline: none;
-        border: none;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding: 20px 43px;
-      }
       /* footer section styling start */
       .footer {
         width: 100%;
@@ -160,9 +158,8 @@
     </style>
   </head>
   <body>
-    <div class="container">
+    <div class="offer-container">
       <div class="left-side">
-        <div class="tile"></div>
         <h1 class="title">
           Let's make <br />beautiful flowers a<br />
           part of your life.
@@ -237,22 +234,41 @@
     </section>
 
     <!-- offer secrtion start -->
-    <section id="offer" style="margin-top: 120px;">
-      <div class="main-container">
+
+    <section id="offer">
+        <div class="offer-container">
+            <div class="offer-content">
+              <h1 class="offer-title">Hot Deal ! Sale Up To 25% <span class="offer-color">Off</span></h1>
+              <p class="offer-paragraph">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </div>
+          
+            <div class="offer-image">
+              <img src="./images/Flower.png" alt="">
+            </div>
+          </div>
+          
+          </body>
+    </section>
+
+    <!-- instagram section start -->
+
+    <section id="instagram">
+      <div class="main-container" style="text-align: center">
         <div class="container">
           <div class="column">
-            <p class="offer-title">
-              Hot Deal ! Sale Up To 25% <span class="offer-color">Off</span>
-            </p>
-            <p class="offer-para">
-              It is a long established fact that a reader will be distracted by
-              the readable<br />content of a page when looking at its layout.<br />
-              <button class="btn" style="margin-top: 20px">sign up</button>
-            </p>
+            <img src="./images/Flower 01.png" alt="" />
           </div>
 
           <div class="column">
-            <img src="./images/pngwing 8.png" alt="" />
+            <img src="./images/Rectangle 4.png" alt="" />
+          </div>
+
+          <div class="column">
+            <img src="./images/Rectangle 5.png" alt="" />
+          </div>
+
+          <div class="column">
+            <img src="./images/Rectangle 6.png" alt="" />
           </div>
         </div>
       </div>
