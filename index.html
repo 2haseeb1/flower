@@ -88,30 +88,51 @@
         height: 558px;
       }
       /* offer section styling start */
+      .offer-main-container {
+        text-align: center;
+        background: rgba(229, 84, 115, 0.05);
+      }
       .offer-container {
-  display: flex;
-  width: 100%;
-}
+        display: flex;
+        justify-content: space-around;
+      }
 
-.offer-image {
-  width: 50%;
-}
+      .offer-column {
+        width: 50%;
+      }
 
-.offer-content {
-  width: 50%;
-}
+      .offer-color {
+        color: red;
+      }
 
-.offer-title {
-  font-size: 36px;
-}
+      .offer-title {
+        color: #272727;
 
-.offer-color {
-  color: red;
-}
+        font-size: 40px;
 
-.offer-paragraph {
-  font-size: 16px;
-}
+        font-weight: 800;
+      }
+      .offer-para {
+        color: rgba(39, 39, 39, 0.6);
+        text-align: center;
+
+        font-size: 16px;
+
+        font-weight: 400;
+        line-height: 20px;
+      }
+      .btn {
+        color: white;
+        font-size: 16px;
+        background: #e55473;
+        padding: 5;
+        border-radius: 8px;
+        outline: none;
+        border: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding: 20px 43px;
+      }
       /* instagram section styling start */
       #instagram .container {
         display: flex;
@@ -237,18 +258,25 @@
 
     <!-- offer secrtion start -->
 
-    <section id="offer">
-        <div class="offer-container">
-            <div class="offer-content">
-              <h1 class="offer-title">Hot Deal ! Sale Up To 25% <span class="offer-color">Off</span></h1>
-              <p class="offer-paragraph">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-            </div>
-          
-            <div class="offer-image">
-              <img src="./images/Flower.png" alt="">
+    <section id="offer" style="margin: 0 auto;">
+        <div class="offer-main-container">
+            <div class="offer-container">
+              <div class="offer-column">
+                <p class="offer-title">
+                  Hot Deal ! Sale Up To 25% <span class="offer-color">Off</span>
+                </p>
+                <p class="offer-para">
+                  It is a long established fact that a reader will be distracted by
+                  the readable<br />content of a page when looking at its layout.<br />
+                  <button class="btn" style="margin-top: 20px">sign up</button>
+                </p>
+              </div>
+      
+              <div class="column">
+                <img src="./images/pngwing 8.png" alt="" />
+              </div>
             </div>
           </div>
-          
           </body>
     </section>
 
